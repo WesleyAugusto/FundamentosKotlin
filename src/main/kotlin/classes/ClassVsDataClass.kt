@@ -1,7 +1,7 @@
 package classes
 
 class Geladeira(val marca: String, val litros: Int)
-data class Televisao(val  marca: String, val polegadas:Int)
+data class Televisao(val marca: String, val polegadas: Int)
 
 fun main(args: Array<String>) {
     val g1 = Geladeira("brastemp", 320)
@@ -19,6 +19,6 @@ fun main(args: Array<String>) {
     println(tv1.copy(polegadas = 42))
 
     // destructuring em data class
-    val (marca,pol) = tv1
+    val (marca, pol) = tv1
     println("$marca $pol")
 }
